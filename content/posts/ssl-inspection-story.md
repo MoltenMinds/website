@@ -1,5 +1,5 @@
 ---
-title: Outbound SSL/TLS Inspection on Check Point
+title: HTTPS Inspection on Check Point
 date: '2019-07-28'
 thumb_img_path: images/11.png
 content_img_path: images/11.png
