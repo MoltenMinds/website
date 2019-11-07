@@ -48,28 +48,6 @@ sections:
             icon_pack: fas
             name: Integration
             description: We leverage our deployments to integrate with other technologies.
-  - type: featuresblock
-    section_id: features
-    component: features_block.html
-    featureslist:
-      - title: Documentation
-        content: >-
-          Strong focus on real SecDevOps.
-        actions:
-          - label: Get Started
-            url: docs/index.html
-      - title: Blog
-        content: >-
-          Azure, AWS And Google Cloud
-        actions:
-          - label: View Posts
-            url: blog/index.html
-      - title: Style Guides
-        content: >-
-          We leverage our deployments to integrate with other technologies.
-        actions:
-          - label: Learn More
-            url: /style-guide.html
   - type: contentblock
     title: A Section With An Image
     section_id: text-img
