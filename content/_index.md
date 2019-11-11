@@ -7,37 +7,47 @@ sections:
     component: hero_block.html
     content: >-
       Anything you need help, from the most basic to Cloud Security, AI, Data Science. We can help you solve it. Just Call us
-    image: images/5.jpg
+    image: images/hero-bg.jpg
     actions:
       - label: Get Started
         url: docs/index.html
-  - type: featuresblock
-    section_id: features
-    component: features_block.html
+  - type: skillsblock
+    section_id: skills
+    component: skills_block.html
     featureslist:
-      - title: Documentation
+      - title: Cybersecurity
         content: >-
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-          a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at,
-          tincidunt ut tellus. Vivamus rhoncus mattis varius.
+          Strong focus on real SecDevOps.
         actions:
           - label: Get Started
             url: docs/index.html
-      - title: Blog
+        feature:
+          - icon: shield-alt
+            icon_pack: fas
+            name: Cybersecurity
+            description: Strong focus on real SecDevOps.
+      - title: Cloud
         content: >-
-          Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis
-          nunc non interdum. Pellentesque tortor ligula, gravida ac commodo eu.
+          Azure, AWS And Google Cloud
         actions:
           - label: View Posts
             url: blog/index.html
-      - title: Style Guides
+        feature:
+          - icon: cloud
+            icon_pack: fas
+            name: Cloud
+            description: Azure, AWS And Google Cloud.
+      - title: Integration
         content: >-
-          Donec lobortis velit sed suscipit lobortis. Ut non quam metus. Nullam
-          a maximus mi. Quisque justo nunc, sollicitudin euismod euismod at,
-          tincidunt ut tellus. Vivamus rhoncus mattis varius.
+          We leverage our deployments to integrate with other technologies.
         actions:
           - label: Learn More
             url: /style-guide.html
+        feature:
+          - icon: compress-arrows-alt
+            icon_pack: fas
+            name: Integration
+            description: We leverage our deployments to integrate with other technologies.
   - type: contentblock
     title: A Section With An Image
     section_id: text-img
