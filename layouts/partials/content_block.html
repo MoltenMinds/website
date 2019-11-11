@@ -2,8 +2,8 @@
   <div class="inner">
     <div class="block-inside">
       {{ if .section.image }}
+      {{ $placeholder := .section.image}}
       <div class="block-preview">
-        <img class="thumbnail img-lazyload" src="{{ .section.image | relURL }}" alt="{{ .section.title }}" />
       </div><!-- .block-preview -->
       {{ end }}
       <div class="block-content">

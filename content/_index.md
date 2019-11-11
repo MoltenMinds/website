@@ -52,6 +52,14 @@ sections:
         url: /docs/getting-started/index.html
       - label: Get Started
         url: /docs/getting-started/index.html
+
+  - type: Peopleblock
+    section_id: people
+    component: people.html
+    content: >-
+      Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
+      cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum
+
   - type: featuresblock
     title: Sample Layouts
     section_id: features-two-col
