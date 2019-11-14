@@ -7,7 +7,7 @@ sections:
     component: hero_block.html
     content: >-
       Anything you need help, from the most basic to Cloud Security, AI, Data Science. We can help you solve it. Just Call us
-    image: images/hero-bg.jpg
+    image: images/home/hero-bg.jpg
     actions:
       - label: Get Started
         url: docs/index.html
@@ -62,14 +62,19 @@ sections:
         url: /docs/getting-started/index.html
       - label: Get Started
         url: /docs/getting-started/index.html
-
   - type: Peopleblock
+    title: Meet the team
     section_id: people
     component: people.html
-    content: >-
-      Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
-      cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum
-
+    peoplelist:
+      - person:
+        - name: Daniel Azar
+          title: Software Design Engineer
+          image: images/home/avatar.jpg
+      - person:
+        - name: Federico Meiners
+          title: CyberSecurity Architect
+          image: images/home/avatar.jpg
   - type: featuresblock
     title: Sample Layouts
     section_id: features-two-col

@@ -1,61 +1,36 @@
-{{/* People Widget */}}
-
-{{/* Initialise */}}
-{{ $ := .root }}
-{{ $page := .page }}
-{{ $show_social := $page.Params.design.show_social | default false }}
-{{ $show_interests := $page.Params.design.show_interests | default true }}
-
-<div class="row justify-content-center people-widget">
-  {{ with $page.Title }}
-  <div class="col-md-12 section-heading">
-    <h1>{{ . | markdownify | emojify }}</h1>
-    {{ if $page.Params.subtitle }}<p>{{ $page.Params.subtitle | markdownify | emojify }}</p>{{ end }}
-  </div>
-  {{ end }}
-
-  {{ with $page.Content }}
-  <div class="col-md-12">
-    {{ . }}
-  </div>
-  {{ end }}
-
-  {{ range $page.Params.content.user_groups }}
-  {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice .) }}
-
-  {{if $query}}
-  <div class="col-md-12">
-    <h2 class="mb-4">{{ . | markdownify }}</h2>
-  </div>
-  {{end}}
-
-  {{ range $query }}
-  {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
-  {{/* Get link to user's profile page. */}}
-  {{ $link := "" }}
-  {{ with site.GetPage (printf "/authors/%s" (path.Base (path.Split .Path).Dir)) }}
-  {{ $link = .RelPermalink }}
-  {{ end }}
-  <div class="col-12 col-sm-auto people-person">
-    {{ $src := "" }}
-    {{ if site.Params.gravatar }}
-    {{ $src = printf "https://s.gravatar.com/avatar/%s?s=200" (md5 .Params.email) }}
-    {{ else if $avatar }}
-    {{ $avatar_image := $avatar.Fill "150x150 Center" }}
-    {{ $src = $avatar_image.RelPermalink }}
-    {{ end }}
-    {{ if $src }}
-    {{with $link}}<a href="{{.}}">{{end}}<img class="portrait" src="{{ $src }}" alt="Avatar">{{if $link}}</a>{{end}}
-    {{ end }}
-
-    <div class="portrait-title">
-      <h2>{{with $link}}<a href="{{.}}">{{end}}{{ .Params.name }}{{if $link}}</a>{{end}}</h2>
-      {{ with .Params.role }}<h3>{{ . | markdownify | emojify }}</h3>{{ end }}
-      {{ if $show_social }}{{ partial "social_links" . }}{{ end }}
-      {{ if and $show_interests .Params.interests }}<p class="people-interests">
-        {{ delimit .Params.interests ", " | markdownify | emojify }}</p>{{ end }}
-    </div>
-  </div>
-  {{ end }}
-  {{ end }}
-</div>
+<section id="{{ .section.section_id }}"
+  class="block poeple-block outer{{ if or .section.title .section.subtitle }} has-header{{ end }}">
+  <div class="inner">
+    <div class="block-inside">
+      {{ if or .section.title .section.subtitle }}
+      <div class="block-header text-center">
+        {{ if .section.title }}
+        <h2 class="block-title">{{ .section.title }}</h2>
+        {{ end }}
+        {{ if .section.subtitle }}
+        <p class="block-subtitle">
+          {{ .section.subtitle | safeHTML }}
+        </p>
+        {{ end }}
+      </div><!-- .block-header -->
+      {{ end }}
+      {{ if .section.peoplelist }}
+      <div class="block-items space-around">
+        {{ range $list := .section.peoplelist }}
+        <section class="block-item text-center">
+          <div class="block-item-inside">
+            {{ range $person :=$list.person }}
+            <a href=""><img class="portrait" src="{{ $person.image }}" alt="Avatar"></a>
+            <h3 class="block-item-title line-left">{{ $person.name }}</h3>
+            <div class="block-item-text">
+              {{ partial "markdownify-block" $person.title }}
+            </div>
+            {{ end }}
+          </div><!-- .block-item-inside -->
+        </section><!-- block-item -->
+        {{ end }}
+      </div><!-- .block-items -->
+      {{ end }}
+    </div><!-- .block-inside -->
+  </div><!-- .inner -->
+</section><!-- .features-block -->
