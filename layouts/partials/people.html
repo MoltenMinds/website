@@ -1,0 +1,36 @@
+<section id="{{ .section.section_id }}"
+  class="block poeple-block outer{{ if or .section.title .section.subtitle }} has-header{{ end }}">
+  <div class="inner">
+    <div class="block-inside">
+      {{ if or .section.title .section.subtitle }}
+      <div class="block-header text-center">
+        {{ if .section.title }}
+        <h2 class="block-title">{{ .section.title }}</h2>
+        {{ end }}
+        {{ if .section.subtitle }}
+        <p class="block-subtitle">
+          {{ .section.subtitle | safeHTML }}
+        </p>
+        {{ end }}
+      </div><!-- .block-header -->
+      {{ end }}
+      {{ if .section.peoplelist }}
+      <div class="block-items space-around">
+        {{ range $list := .section.peoplelist }}
+        <section class="block-item text-center">
+          <div class="block-item-inside">
+            {{ range $person :=$list.person }}
+            <a href=""><img class="portrait" src="{{ $person.image }}" alt="Avatar"></a>
+            <h3 class="block-item-title line-left">{{ $person.name }}</h3>
+            <div class="block-item-text">
+              {{ partial "markdownify-block" $person.title }}
+            </div>
+            {{ end }}
+          </div><!-- .block-item-inside -->
+        </section><!-- block-item -->
+        {{ end }}
+      </div><!-- .block-items -->
+      {{ end }}
+    </div><!-- .block-inside -->
+  </div><!-- .inner -->
+</section><!-- .features-block -->

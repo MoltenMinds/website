@@ -1538,9 +1538,64 @@ img {
       padding-left: 1.125em;
       padding-right: 1.125em; } }
 
+/*****
+* hover
+******/
+.block-item-inside {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.block-item-inside:hover {
+  transform: scale(1.25, 1.25);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 50px 150px rgba(0, 0, 0, 0.3); }
+
+/*************************************************
+ *  About widget
+ **************************************************/
+.space-around {
+  justify-content: space-around; }
+
+#profile {
+  text-align: center;
+  padding: 30px 10px;
+  position: relative; }
+
+.portrait {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 2em 0; }
+
+.portrait-title h2 {
+  font-size: 1.75em;
+  font-weight: 300;
+  color: #000000;
+  margin: 20px 0 10px 0; }
+
+.portrait-title h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0px 0 10px 0; }
+
+ul.network-icon {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 /*************************************************
  *  Featurette Widget
  **************************************************/
+.text-center {
+  text-align: center; }
+
 .featurette {
   font-size: 0.8rem;
   line-height: 1.5;
@@ -1589,7 +1644,6 @@ img {
   background: #fff;
   border: 1px solid #dee5ef;
   border-radius: 3px;
-  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
   margin-bottom: 3vw;
   padding-bottom: 2.5em; }
 

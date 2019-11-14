@@ -1,7 +1,7 @@
-{{ $image := (.Page.Resources.GetMatch  ( .Get "src")) }}
-{{ $alt := (.Page.Resources.GetMatch  ( .Get "alt")) }}
+{{ $image := .image | relURL}}
+{{ $alt := .alt }}
 {{ $placeholder := $image.Resize "2x q20" }}
-{{ $class := (.Page.Resources.GetMatch  ( .Get "class")) }}
+{{ $class := .imageClass }}
 <div class="image_placeholder" style="max-width: {{$image.Width}}px">
     <div class="image_placeholder_inside">
         <img src="{{ $placeholder.Permalink }}" alt="{{$alt}}" data-src="{{ $image.Permalink }}"
