@@ -993,6 +993,59 @@ img {
   margin-bottom: 2.5em; }
   .post.post-full:last-child {
     margin-bottom: 5.625em; }
+  .post .author-footer {
+    margin-top: 10px !important; }
+
+/*************************************************
+ *  Author profile card
+ **************************************************/
+.author-card {
+  display: flex;
+  align-items: flex-start; }
+  .author-card .portrait {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem !important;
+    margin-left: 0px; }
+
+.author-card .card-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.84);
+  text-decoration: none; }
+
+.author-card .card-title a {
+  color: rgba(0, 0, 0, 0.84);
+  text-decoration: none; }
+
+.dark .author-card .card-title,
+.dark .author-card .card-title a {
+  color: rgba(255, 255, 255, 0.84); }
+
+.author-card p {
+  margin-bottom: 5px; }
+
+.author-card .card-subtitle {
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.54);
+  margin-bottom: 7px;
+  margin-top: 0px !important; }
+
+.dark .author-card .card-subtitle {
+  color: rgba(255, 255, 255, 0.54); }
+
+.author-card .card-text {
+  color: rgba(0, 0, 0, 0.76);
+  font-size: 0.8rem;
+  margin-bottom: 4px; }
+
+.dark .author-card .card-text {
+  color: rgba(255, 255, 255, 0.76); }
 
 .page-header,
 .post-full .post-header {

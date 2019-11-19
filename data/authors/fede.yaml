@@ -1,20 +1,20 @@
 ---
 # Display name
-name: Daniel Azar
+name: Federico Meiners
 
 # Username (this should match the folder name)
-authors:
-- dani
+author: fede
+avatar: avatar.jpg
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Lead Software Design Engineer
+role: CyberSecurity Architect
 
 # Organizations/Affiliations
 organizations:
-- name: ITBA - Buenos Aires Technology Institute 
+- name: UBA - Universidad de Buenos Aires
   url: "https://www.itba.edu.ar/"
 
 # Short bio (displayed in user profile at end of posts)
@@ -51,22 +51,19 @@ social:
   icon_pack: fab
   link: https://github.com/daniazar
 # Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
 #   icon_pack: ai
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
-  
+
 # Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.  
+#   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
 - Team
 ---
 
-Daniel Azar is a Software Engineer working at the Microsoft Azure platform. His works include the VPN networking section of the Azure Portal and the Azure Email Orchestrator.
-
-In high school at ORT I graduated with honors specialized in ICT. During it I stood out in different national and international competitions in mathematics and computer science. Then I studied Software Engineering at ITBA where I focused on graphic computing. My thesis was about the generation of algebraic surfaces in mobile devices. At 23, I formed a software factory. Then I participated in several innovative projects.
-
-I am currently involved in 2 projects. Developing a crowdfunding platform in exchange for actions and the development of a new way to buy products online. I participate in two meetup groups, one on programming and the other on data dissemination.
+Federico started working at the age of 19 and quickly began to lead projects in the Information Security field ranging from technical implementations, risk and audit at different international company. This allowed him to develop the tools to work with senior management and technical teams as well.
+Federico holds several international certifications, such as Check Point Security Master (CCSM), the Project Manager Professional (PMP) awarded by the Project Management Institute and the Certified in Risk and Information Systems Control (CRISC) granted by ISACA, among others.

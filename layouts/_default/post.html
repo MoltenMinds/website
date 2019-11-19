@@ -1,33 +1,52 @@
 {{ define "content" }}
 
-  <article class="post post-full">
-    <header class="post-header bg-gradient outer">
-      {{ if .Params.content_img_path }}
-      <div class="bg-img" style="background-image: url('{{ .Params.content_img_path | relURL }}')"></div>
+<article class="post post-full">
+  <header class="post-header bg-gradient outer">
+    {{ if .Params.content_img_path }}
+    <div class="bg-img" style="background-image: url('{{ .Params.content_img_path | relURL }}')"></div>
+    {{ end }}
+    <div class="inner-small">
+      <div class="post-meta">
+        <time class="published"
+          datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "January 02, 2006" }}</time>
+      </div><!-- .post-meta -->
+      <h1 class="post-title">{{ .Params.title }}</h1>
+      {{ if .Params.subtitle }}
+      <div class="post-subtitle">
+        {{ .Params.subtitle | safeHTML }}
+      </div><!-- .post-subtitle -->
       {{ end }}
-      <div class="inner-small">
-        <div class="post-meta">
-          <time class="published" datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "January 02, 2006" }}</time>
-        </div><!-- .post-meta -->
-        <h1 class="post-title">{{ .Params.title }}</h1>
-        {{ if .Params.subtitle }}
-        <div class="post-subtitle">
-          {{ .Params.subtitle | safeHTML }}
-        </div><!-- .post-subtitle -->
+    </div><!-- .inner-small -->
+  </header><!-- .post-header -->
+  <div class="outer">
+    <div class="inner-medium">
+      <div class="post-content">
+        {{ .Content }}
+      </div><!-- .post-content -->
+      <footer class="author-footer post-content">
+        {{$author := .Params.author}}
+        {{ range $.Site.Data.authors }}
+        {{if eq $author .author}}
+        {{/* Author profile box */}}
+        {{ $taxonomy := "authors" }}
+        {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
+        <div class="media author-card content-widget-hr">
+          <img class="portrait mr-3" src="/images/authors/{{ .avatar }}" alt="Avatar">
+          <div class="media-body">
+            <h5 class="card-title"><a href="">{{.name}}</a></h5>
+            {{ with .role }}<h6 class="card-subtitle">{{. | markdownify | emojify}}</h6>{{end}}
+            {{ with .bio }}<p class="card-text">{{. | markdownify | emojify}}</p>{{end}}
+          </div>
+        </div>
+        {{end}}
         {{ end }}
-      </div><!-- .inner-small -->
-    </header><!-- .post-header -->
-    <div class="outer">
-      <div class="inner-medium">
-        <div class="post-content">
-          {{ .Content }}
-        </div><!-- .post-content -->
-      </div><!-- .inner-medium -->
-    </div><!-- .outer-->
-  </article><!-- .post -->
+      </footer>
+    </div><!-- .inner-medium -->
+  </div><!-- .outer-->
+</article><!-- .post -->
 
-  <!-- Next/previous post navigation TBD -->
-  <!--
+<!-- Next/previous post navigation TBD -->
+<!--
   <div class="outer">
     <div class="inner-medium">
       <nav class="read-next">
