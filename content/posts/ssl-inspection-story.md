@@ -6,6 +6,7 @@ content_img_path: images/11.png
 excerpt: >-
   Leassons learnt working no SSL Inspection
 layout: post
+author: fede
 ---
 
 Hello everyone,
