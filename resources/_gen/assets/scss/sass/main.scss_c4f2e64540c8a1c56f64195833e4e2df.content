@@ -191,7 +191,6 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 a {
-  border-bottom: 1px solid currentColor;
   color: #004e92;
   text-decoration: none;
   -webkit-transition: border-color .3s ease, color .3s ease;

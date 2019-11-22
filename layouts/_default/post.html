@@ -33,8 +33,8 @@
         <div class="media author-card content-widget-hr">
           <img class="portrait mr-3" src="/images/authors/{{ .avatar }}" alt="Avatar">
           <div class="media-body">
-            <h5 class="card-title"><a href="">{{.name}}</a></h5>
-            {{ with .role }}<h6 class="card-subtitle">{{. | markdownify | emojify}}</h6>{{end}}
+            <h5 class="card-title"><a href="/author/{{.author}}">{{.name}}</a></h5>
+            {{ with .role }}<h6 class=" card-subtitle">{{. | markdownify | emojify}}</h6>{{end}}
             {{ with .bio }}<p class="card-text">{{. | markdownify | emojify}}</p>{{end}}
           </div>
         </div>

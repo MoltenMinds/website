@@ -71,10 +71,12 @@ sections:
         - name: Daniel Azar
           title: Software Design Engineer
           image: images/home/avatar.jpg
+          url: /author/dani
       - person:
         - name: Federico Meiners
           title: CyberSecurity Architect
           image: images/home/avatar.jpg
+          url: /author/fede
   - type: featuresblock
     title: Sample Layouts
     section_id: features-two-col
