@@ -63,7 +63,6 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
 - Team
----
 
-Federico started working at the age of 19 and quickly began to lead projects in the Information Security field ranging from technical implementations, risk and audit at different international company. This allowed him to develop the tools to work with senior management and technical teams as well.
-Federico holds several international certifications, such as Check Point Security Master (CCSM), the Project Manager Professional (PMP) awarded by the Project Management Institute and the Certified in Risk and Information Systems Control (CRISC) granted by ISACA, among others.
+text: "Federico started working at the age of 19 and quickly began to lead projects in the Information Security field ranging from technical implementations, risk and audit at different international company. This allowed him to develop the tools to work with senior management and technical teams as well.
+Federico holds several international certifications, such as Check Point Security Master (CCSM), the Project Manager Professional (PMP) awarded by the Project Management Institute and the Certified in Risk and Information Systems Control (CRISC) granted by ISACA, among others."

@@ -4,6 +4,7 @@ name: Daniel Azar
 
 # Username (this should match the folder name)
 author: dani
+avatar: avatar.jpg
 
 # Is this the primary user of the site?
 superuser: true
@@ -62,10 +63,6 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
 - Team
----
-
-Daniel Azar is a Software Engineer working at the Microsoft Azure platform. His works include the VPN networking section of the Azure Portal and the Azure Email Orchestrator.
-
+text: "Daniel Azar is a Software Engineer working at the Microsoft Azure platform. His works include the VPN networking section of the Azure Portal and the Azure Email Orchestrator.
 In high school at ORT I graduated with honors specialized in ICT. During it I stood out in different national and international competitions in mathematics and computer science. Then I studied Software Engineering at ITBA where I focused on graphic computing. My thesis was about the generation of algebraic surfaces in mobile devices. At 23, I formed a software factory. Then I participated in several innovative projects.
-
-I am currently involved in 2 projects. Developing a crowdfunding platform in exchange for actions and the development of a new way to buy products online. I participate in two meetup groups, one on programming and the other on data dissemination.
+I am currently involved in 2 projects. Developing a crowdfunding platform in exchange for actions and the development of a new way to buy products online. I participate in two meetup groups, one on programming and the other on data dissemination."
