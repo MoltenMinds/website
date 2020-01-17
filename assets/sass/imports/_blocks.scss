@@ -208,12 +208,17 @@
 
 }
 
-.block-item-inside:hover {
+.block-item:hover .block-item-inside {
   transform: scale(1.25, 1.25);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
      box-shadow: 0 50px 150px rgba(0,0,0,0.3);
 
 }
+
+.block-item:hover + .block-item h3:before {
+  display : none;
+}
+
 /*************************************************
  *  About widget
  **************************************************/

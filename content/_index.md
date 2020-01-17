@@ -49,14 +49,12 @@ sections:
             name: Integration
             description: We leverage our deployments to integrate with other technologies.
   - type: contentblock
-    title: A Section With An Image
+    title: How we work
     section_id: text-img
     component: content_block.html
     content: >-
-      Nam pulvinar ante eu ultricies volutpat. Sed nulla nibh, dapibus sit amet
-      cursus quis, fringilla nec sapien. Vestibulum imperdiet nunc bibendum
-      consectetur lobortis.
-    image: images/10.jpg
+      We specialize in cloud and infrastructure automation. We work in an iterative aproach in order to resolve the problem. First we Analyze the isssues, then we design a solution. At last we test the solution and start the cycle again until the goals are reached.
+    image: images/diagram3.svg
     actions:
       - label: View Demo
         url: /docs/getting-started/index.html
