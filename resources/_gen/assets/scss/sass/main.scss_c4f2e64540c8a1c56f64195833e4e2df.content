@@ -1607,7 +1607,7 @@ img {
  *  About widget
  **************************************************/
 .space-around {
-  justify-content: space-around; }
+  justify-content: center; }
 
 #profile {
   text-align: center;
