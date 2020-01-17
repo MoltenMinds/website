@@ -1554,7 +1554,7 @@ img {
     .cta-block {
       padding-bottom: 1.875em; } }
   .cta-block .block-outside {
-    border-radius: 5px;
+    border-radius: 45px;
     color: #fff;
     padding: 2.5em 5% 1.25em; }
   .cta-block .block-title {
