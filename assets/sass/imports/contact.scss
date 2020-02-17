@@ -1,0 +1,74 @@
+/**
+ * Contact
+ * ----------------------------------------------------------------------------
+ */
+ $red: #e74c3c;
+
+ form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+ 
+ input, textarea {
+    border:0; outline:0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    box-shadow: 0 1px 1px rgba(black, 0.1);
+    resize: none;
+   
+   &:focus {
+      box-shadow: 0 0px 2px rgba($red, 1) !important;
+   }
+ }
+ 
+ .input-submit {
+    cursor: pointer;
+    margin-top: 80px;
+ }
+ 
+ textarea {
+     height: 126px;
+ }
+}
+
+.halfnofloat {
+  width: 48%;
+  margin-bottom: 1em;
+ }
+ 
+.half {
+ float: left;
+ width: 48%;
+ margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+    margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+ .half {
+    width: 100%; 
+    float: none;
+    margin-bottom: 0; 
+ }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+   content: " "; /* 1 */
+   display: table; /* 2 */
+}
+
+.cf:after {
+   clear: both;
+}

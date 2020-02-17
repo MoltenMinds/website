@@ -10,7 +10,7 @@ sections:
     image: images/home/hero-bg.jpg
     actions:
       - label: Get Started
-        url: docs/index.html
+        url: '#contact'
   - type: skillsblock
     section_id: skills
     component: skills_block.html
@@ -18,9 +18,6 @@ sections:
       - title: Cybersecurity
         content: >-
           Strong focus on real SecDevOps.
-        actions:
-          - label: Get Started
-            url: docs/index.html
         feature:
           - icon: shield-alt
             icon_pack: fas
@@ -29,9 +26,6 @@ sections:
       - title: Cloud
         content: >-
           Azure, AWS And Google Cloud
-        actions:
-          - label: View Posts
-            url: blog/index.html
         feature:
           - icon: cloud
             icon_pack: fas
@@ -40,9 +34,6 @@ sections:
       - title: Integration
         content: >-
           We leverage our deployments to integrate with other technologies.
-        actions:
-          - label: Learn More
-            url: /style-guide.html
         feature:
           - icon: compress-arrows-alt
             icon_pack: fas
@@ -85,6 +76,10 @@ sections:
           title: CyberSecurity Architect
           image: images/authors/fede.png
           url: /author/fede
+  - type: contactblock
+    section_id: contact
+    title: Get in touch!
+    component: contact.html
 menu:
   main:
     name: Home
