@@ -728,6 +728,85 @@ img {
     opacity: 0.15; } }
 
 /**
+ * Author
+ * ----------------------------------------------------------------------------
+ */
+#author {
+  padding: 100px;
+  /*Color Palette*/
+  /*Global styles*
+---------------------*/
+  /* apply a natural box layout model to all elements, but allowing components to change */
+  /*Header and Footer
+ ------------------------*/
+  /*Header*/
+  /*Footer*/
+  /*Education
+ ------------------------*/ }
+  #author inner {
+    border-radius: 50px; }
+  #author html {
+    box-sizing: border-box; }
+  #author *, #author *:before, #author *:after {
+    box-sizing: inherit; }
+  #author body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; }
+  #author h1, #author h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400; }
+  #author h1 {
+    font-size: 80px; }
+  #author h2 {
+    font-size: 40px;
+    margin-top: 0; }
+  #author a {
+    color: #ef233c; }
+  #author a:hover {
+    text-decoration: none; }
+  #author .content-wrap {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: auto;
+    margin-bottom: 50px; }
+  #author .col-narrow {
+    width: 30%;
+    float: left;
+    min-height: 175px; }
+  #author .col-wide {
+    float: left;
+    padding-left: 20px;
+    min-height: 175px; }
+  #author header, #author footer {
+    background: linear-gradient(to right, #000428, #004e92);
+    color: #8d99ae;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 100px; }
+  #author .profile-img {
+    border-radius: 100%;
+    max-width: 250px;
+    max-height: 250px; }
+  #author header h1, #author header h2 {
+    color: #edf3f4;
+    margin: 0; }
+  #author footer {
+    text-align: center; }
+  #author .contact-info a {
+    padding: 10px;
+    display: inline-block; }
+  #author .education {
+    background-color: #aaacbb;
+    border-radius: 100px; }
+
+@media (max-width: 600px) {
+  #author {
+    padding: 5% 20%; }
+  .content-wrap {
+    padding: 0px; } }
+
+/**
  * Contact
  * ----------------------------------------------------------------------------
  */
@@ -763,17 +842,31 @@ form {
   width: 48%;
   margin-bottom: 1em; }
 
+.float {
+  float: left;
+  width: 48%; }
+
+.floatright {
+  float: right;
+  width: 48%; }
+
 .right {
   width: 50%; }
 
 .left {
   margin-right: 2%; }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .half {
     width: 100%;
     float: none;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .float {
+    float: none;
+    width: 100%; }
+  .floatright {
+    float: none;
+    width: 100%; } }
 
 /* Clearfix */
 .cf:before,

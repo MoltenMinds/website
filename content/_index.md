@@ -70,12 +70,12 @@ sections:
         - name: Daniel Azar
           title: Software Design Engineer
           image: images/home/avatar.jpg
-          url: /author/dani
+          url: https://www.linkedin.com/in/daniazar/
       - person:
         - name: Federico Meiners
           title: CyberSecurity Architect
           image: images/authors/fede.png
-          url: /author/fede
+          url: https://www.linkedin.com/in/federicomeiners/
   - type: contactblock
     section_id: contact
     title: Get in touch!

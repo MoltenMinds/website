@@ -46,6 +46,16 @@
  margin-bottom: 1em;
 }
 
+.float {
+  float: left;
+  width: 48%;
+ }
+
+ .floatright {
+  float: right;
+  width: 48%;
+ }
+
 .right { width: 50%; }
 
 .left {
@@ -53,13 +63,24 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
  .half {
     width: 100%; 
     float: none;
     margin-bottom: 0; 
  }
+
+ .float {
+   float:none;
+   width: 100%;
+ }
+ .floatright {
+  float:none;
+  width: 100%;
 }
+
+}
+
 
 
 /* Clearfix */
