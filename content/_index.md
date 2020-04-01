@@ -44,7 +44,7 @@ sections:
     section_id: text-img
     component: content_block.html
     content: >-
-      We specialize in cloud and infrastructure automation. We work in an iterative aproach in order to resolve the problem. First we Analyze the isssues, then we design a solution. At last we test the solution and start the cycle again until the goals are reached.
+      We specialize in cloud and infrastructure automation. We work in an iterative approach in order to resolve the problem. First we Analyze the issues, then we design a solution. At last we test the solution and start the cycle again until the goals are reached.
     image: images/diagram3.svg
     actions:
       - label: View Demo
@@ -55,12 +55,16 @@ sections:
     title: Latest works
     section_id: cta
     component: cta_block.html
-    subtitle: HTTPS Inspection on Check Point.
+    subtitle:  The Hurdles of auto scaling an Application to reduce costs
+    content: >-
+      HTTPS Inspection on Check Point.
     actions:
-      - label: Read More
-        url: /posts/ssl-inspection-story/
       - label: View all
         url: /blog
+      - label: Read More
+        url: /posts/auto-scale-problems//
+      - label: Read More
+        url: /posts/ssl-inspection-story/
   - type: Peopleblock
     title: Meet the team
     section_id: people

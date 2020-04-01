@@ -9,6 +9,9 @@
             {{ .section.subtitle | safeHTML }}
           </p>
           {{ end }}
+          <div class="block-text">
+            {{ partial "markdownify-block" .section.content }}
+          </div>
         </div><!-- .block-content -->
         {{ if .section.actions }}
         <div class="block-cta">
