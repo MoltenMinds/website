@@ -12,6 +12,11 @@
           <div class="block-text">
             {{ partial "markdownify-block" .section.content }}
           </div>
+          {{ range $action := .section.actions }}
+          <p class="block-text">
+            {{ $action.title | safeHTML }}
+          </p>
+          {{ end }}
         </div><!-- .block-content -->
         {{ if .section.actions }}
         <div class="block-cta">

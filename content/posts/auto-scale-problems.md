@@ -4,7 +4,7 @@ date: '2020-03-09'
 thumb_img_path: images/scale.png
 content_img_path: images/scale.png
 excerpt: >-
-  Leassons learnt on scaling a cloud designed application
+  Lessons learnt on scaling a cloud designed application
 layout: post
 author: dani
 ---

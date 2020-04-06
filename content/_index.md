@@ -55,16 +55,18 @@ sections:
     title: Latest works
     section_id: cta
     component: cta_block.html
-    subtitle:  The Hurdles of auto scaling an Application to reduce costs
-    content: >-
-      HTTPS Inspection on Check Point.
     actions:
       - label: View all
         url: /blog
       - label: Read More
-        url: /posts/auto-scale-problems//
+        url: /posts/auto-scale-blob-storage/
+        title: Issues when using configuration files in Scaling environments
+      - label: Read More
+        url: /posts/auto-scale-problems/
+        title: The Hurdles of auto scaling an Application to reduce costs
       - label: Read More
         url: /posts/ssl-inspection-story/
+        title: HTTPS Inspection on Check Point.
   - type: Peopleblock
     title: Meet the team
     section_id: people
