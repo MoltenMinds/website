@@ -46,11 +46,6 @@ sections:
     content: >-
       We specialize in cloud and infrastructure automation. We work in an iterative approach in order to resolve the problem. First we Analyze the issues, then we design a solution. At last we test the solution and start the cycle again until the goals are reached.
     image: images/diagram3.svg
-    actions:
-      - label: View Demo
-        url: /docs/getting-started/index.html
-      - label: Get Started
-        url: /docs/getting-started/index.html
   - type: ctablock
     title: Latest works
     section_id: cta
