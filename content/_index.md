@@ -70,7 +70,7 @@ sections:
       - person:
         - name: Daniel Azar
           title: Software Design Engineer
-          image: images/home/avatar.jpg
+          image: images/authors/dani.jpg
           url: https://www.linkedin.com/in/daniazar/
       - person:
         - name: Federico Meiners
