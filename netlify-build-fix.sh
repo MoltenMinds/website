@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # https://github.com/netlify/build-image/issues/183#issuecomment-419199649
-
+# https://community.chocolatey.org/packages/hugo-extended/0.85.0#testingResults
 HUGO_FLAVOUR="hugo_extended"
-HUGO_VERSION="0.47"
+HUGO_VERSION="0.85.0"
 
 echo "start netlify-build-fix.sh"
 echo "Hugo version: ${HUGO_VERSION}"
