@@ -77,6 +77,11 @@ sections:
           title: CyberSecurity Architect
           image: images/authors/fede.png
           url: https://www.linkedin.com/in/federicomeiners/
+      - person:
+        - name: Santiago Arroyo
+          title: Software Engineer
+          image: images/authors/santi.png
+          url: https://www.linkedin.com/in/santiarroyo/
   - type: contactblock
     section_id: contact
     title: Get in touch!
